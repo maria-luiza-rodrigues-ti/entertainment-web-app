@@ -18,8 +18,8 @@ export function Router() {
         <Route path="/tv-series/" element={<TVSeries />} />
         <Route path="/bookmarked/" element={<Bookmarked />} />
       </Route>
-      <Route element={<LoginLayout />}>
-        <Route path="/" element={<Login />} />
+      <Route path="/auth" element={<LoginLayout />}>
+        <Route path="/log-in" element={<Login />} />
         <Route path="/sign-up/" element={<SignUp />} />
       </Route>
     </Routes>

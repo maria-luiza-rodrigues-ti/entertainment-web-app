@@ -12,14 +12,14 @@ import { SignUp } from "./pages/SignUp";
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
+      <Route path="/home" element={<DefaultLayout />}>
+        <Route path="/home/" element={<Home />} />
         <Route path="/movies/" element={<Movies />} />
         <Route path="/tv-series/" element={<TVSeries />} />
         <Route path="/bookmarked/" element={<Bookmarked />} />
       </Route>
-      <Route path="/login" element={<LoginLayout />}>
-        <Route path="/login/" element={<Login />} />
+      <Route path="/" element={<LoginLayout />}>
+        <Route path="/log-in/" element={<Login />} />
         <Route path="/sign-up/" element={<SignUp />} />
       </Route>
     </Routes>

@@ -18,7 +18,7 @@ export function Router() {
         <Route path="/tv-series/" element={<TVSeries />} />
         <Route path="/bookmarked/" element={<Bookmarked />} />
       </Route>
-      <Route path="/" element={<LoginLayout />}>
+      <Route path="/login" element={<LoginLayout />}>
         <Route path="/login/" element={<Login />} />
         <Route path="/sign-up/" element={<SignUp />} />
       </Route>

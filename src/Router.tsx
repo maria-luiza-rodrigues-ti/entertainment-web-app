@@ -19,7 +19,6 @@ export function Router() {
         <Route path="/bookmarked/" element={<Bookmarked />} />
       </Route>
       <Route path="/auth" element={<LoginLayout />}>
-        <Route path="/log-in" element={<Login />} />
         <Route path="/sign-up/" element={<SignUp />} />
       </Route>
     </Routes>
